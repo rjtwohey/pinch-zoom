@@ -1,0 +1,7 @@
+{
+  "name": "pinch-zoom",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
