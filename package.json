@@ -24,10 +24,13 @@
     "@capacitor/app": "6.0.0",
     "@capacitor/core": "6.1.0",
     "@capacitor/haptics": "6.0.0",
+    "@capacitor/ios": "^6.1.0",
     "@capacitor/keyboard": "6.0.1",
     "@capacitor/status-bar": "6.0.0",
     "@ionic/angular": "^8.0.0",
+    "@meddv/ngx-pinch-zoom": "^18.0.1",
     "ionicons": "^7.0.0",
+    "ng2-pdf-viewer": "^10.2.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
