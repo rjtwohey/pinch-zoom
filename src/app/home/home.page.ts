@@ -12,8 +12,22 @@ export class HomePage {
   myPadding: number;
 
   constructor(public platform: Platform) {
-    this.pdfData = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
+    this.pdfData = "";
     this.zoom = 1.0;
     this.myPadding = 0.5;
+  }
+
+  onFileSelected() {
+    let $img: any = document.querySelector('#file');
+  
+    if (typeof (FileReader) !== 'undefined') {
+      let reader = new FileReader();
+  
+      reader.onload = (e: any) => {
+        this.pdfData = e.target.result;
+      };
+  
+      reader.readAsArrayBuffer($img.files[0]);
+    }
   }
 }
